@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav a {
+            color: #242424;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            color: #242424;
+            font-size: 25px;
+            border-bottom: 2px #242424 solid;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFFFFF;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .head{
+            text-align: center;
+            margin-top: 100px;
+            text-decoration: 3px underline yellow;
+            font-size: 40px;
+        }
+        .vehicles{
+            width: 1200px;
+            margin-top: -500px;
+        }
+        .vehicle1{
+            border: 1px black solid;
+            width: 250px;
+            height: 250px;
+            margin-left: 70px;
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+        .vehicle1:hover{
+            width: 280px;
+            opacity: 1;
+            box-shadow: 10px 10px 10px black;
+        }
+        .seo3{
+            width: 200px;
+            margin-right: -10px;
+        }
+        .seo3:hover{
+            width: 230px;
+        }
+        .name1{
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            text-decoration: #424242 underline;
+            font-weight: 600;
+        }
+        .vehicle2{
+            border: 1px black solid;
+            width: 250px;
+            height: 250px;
+            margin-left: 500px;
+            margin-top: -250px;
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+        .vehicle2:hover{
+            width: 280px;
+            opacity: 1;
+            box-shadow: 10px 10px 10px black;
+        }
+        .seo3lite{
+            width: 150px;
+            margin-left: 40px;
+        }
+        .seo3lite:hover{
+            width: 180px;
+        }
+        .name2{
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            margin-top: 13px;
+            text-decoration: #424242 underline;
+            font-weight: 600;
+        }
+        .seo3max{
+            width: 200px;
+            margin-left: 30px;
+        }
+        .seo3max:hover{
+            width: 230px;
+        }
+        .vehicle3{
+            border: 1px black solid;
+            width: 250px;
+            height: 250px;
+            margin-left: 920px;
+            margin-top: -250px;
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+        .vehicle3:hover{
+            width: 280px;
+            opacity: 1;
+            box-shadow: 10px 10px 10px black;
+        }
+        .name3{
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            text-decoration: #424242 underline;
+            font-weight: 600;
+        }
+        .compare{
+            font-size: 20px;
+            text-align: center;
+            border: 2px black solid;
+            width: 200px;
+            margin-left: 520px;
+            margin-top: 100px;
+            border-radius: 10px;
+            opacity: 0.5;
+            color: black;
+            text-decoration: white underline
+        }
+        .compare:hover{
+            font-size: 30px;
+            opacity: 1;
+            background-color: #F9ED32;
+            size: 50px;
+            box-shadow: 5px 5px 5px black;
+            text-decoration: yellow underline
+        }
+        .logo{
+            width: 800px;
+            margin-top: 50px;
+            opacity: 0.2;
+        }
+        .footer{
+            border-top: 2px solid; 
+            margin-top: 1000px;
+            height: 150px;
+            background-color: #252525;
+        }
+        .foot{
+            font-size: 14px;
+            color: black;
+            line-height: 50px;
+            margin-left: 20px;
+            color: white;
+            opacity: 0.5;
+            text-decoration:  #252525 underline;
+        }
+        .foot:hover{
+            opacity: 1;
+        }
+        .logo2{
+            width: 100px;
+            margin-left: -1150px;
+            margin-top: -100px;
+            animation-name: logo;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        .logo2:hover{
+            width: 120px
+        }
+        @keyframes logo{
+            from{scale:0;}
+            to{scale:1;}
+        }
+        .products{
+            display: flexbox;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="Untitled-21.html">Home</a></li>
+            <li><a href="Untitled-21(2).html">About Us</a></li>
+            <li class="dropdown">
+                <a href="Untitled-21(4).html" class="dropbtn" target="_blank">Products</a>
+                <div class="dropdown-content">
+                    <a href="Untitled-21(4)(2).html" target="_blank">SE03 Lite</a>
+                    <a href="Untitled-21(4)(1).html" target="_blank">SE03</a>
+                    <a href="Untitled-21(4)(3).html" target="_blank">SE03 Max</a>
+                    <a href="Untitled-21(4)(4).html" target="_blank">Compare All</a>
+                </div>
+            </li>
+            <li><a href="Untitled-21(3).html">Contact Us</a></li>
+            <li><a href="Untitled-pre book.html" target="_blank">Pre-book Now</a></li>
+            <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+            &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+    </nav>
+    <center><img src="Rhyno.png" class="logo2"></center>
+    <h1 class="head">
+        Products
+    </h1>
+    <div>
+        <center><img src="Rhyno.png" class="logo"></center>
+        <div class="products">
+            <center><img src="EV's.png" class="vehicles"></center>
+            <a href="Untitled-21(4)(1).html" target="_blank"><div class="vehicle1">
+                <img src="SEO3.png" class="seo3">
+                <p class="name1">
+                    SEO3
+                </p>
+            </div></a>
+            <a href="Untitled-21(4)(2).html" target="_blank"><div class="vehicle2">
+                <img src="SEO3 lite.png" class="seo3lite">
+                <p class="name2">
+                    SEO3 Lite
+                </p>
+            </div></a>
+            <a href="Untitled-21(4)(3).html" target="_blank"><div class="vehicle3">
+                <img src="SEO3 Max.png" class="seo3max">
+                <p class="name3">
+                    SEO3 Max
+                </p>
+            </div></a>
+            <a href="Untitled-21(4)(4).html" target="_blank"><p class="compare">
+                Compare all
+            </p></a>
+        </div>
+    </div>
+    <center><div class="footer">
+        <a href="" class="foot">Privacy Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(3).html" class="foot">Contact us</a><a class="foot">|</a>
+        <a href="Untitled-21(4).html" class="foot">Products</a><a class="foot">|</a>
+        <a href="https://www.linkedin.com/company/rhyno-wheels/"target="_blank" class="foot">Career</a><a class="foot">|</a>
+        <a href="" class="foot">Refund Policy</a><a class="foot">|</a>
+        <a href="" class="foot">Website Policy</a><a class="foot">|</a>
+        <a href="" class="foot">Rentals</a>
+        <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+        &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+    </div></center>
+</body>
+</html>
